@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation';
 import { 
   Play, Settings, Terminal as TerminalIcon, GitPullRequest, 
   CheckCircle2, XCircle, AlertTriangle, Code, GitBranch, 
-  Database, RefreshCw, Layers, ShieldAlert, Cpu, Eye, EyeOff, Info,
+  Database, RefreshCw, Layers, ShieldAlert, Shield, Cpu, Eye, EyeOff, Info,
   LogOut, Plus, Trash2, Calendar, FileText
 } from 'lucide-react';
 import { authClient } from '@/lib/auth-client';
@@ -535,12 +535,12 @@ TypeError: Cannot read properties of undefined (reading 'toString')
       {/* Navbar */}
       <header className="py-6 mb-8 border-b border-slate-800 flex flex-col sm:flex-row gap-4 justify-between sm:items-center">
         <div className="flex items-center gap-3">
-          <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-magenta-500 flex items-center justify-center glow-cyan">
-            <Cpu className="h-6 w-6 text-white animate-pulse-slow" />
+          <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center glow-cyan shadow-lg shadow-cyan-500/20">
+            <Shield className="h-6 w-6 text-white" />
           </div>
           <div>
-            <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-              HYDRA AGENT
+            <h1 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 via-indigo-300 to-pink-400 bg-clip-text text-transparent">
+              AEGIS CI
             </h1>
             <p className="text-xs text-slate-400 font-mono">Autonomous Self-Healing CI/CD Platform</p>
           </div>

@@ -7,7 +7,7 @@ import webbrowser
 def print_banner():
     banner = """
 ========================================================================
-             HYDRA: Autonomous Self-Healing CI/CD Agent
+             AEGIS CI: Autonomous Self-Healing CI/CD Agent
 ========================================================================
     A Next.js full-stack platform coordinating specialized AI agents
     to autonomously fix failing codebases inside sandboxed runtimes.

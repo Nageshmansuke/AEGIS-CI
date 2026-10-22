@@ -1,12 +1,12 @@
-# HYDRA: Autonomous Self-Healing CI/CD Developer Agent
+# AEGIS CI: Autonomous Self-Healing CI/CD Developer Agent
 
-HYDRA is a full-stack Next.js platform that operates directly within the software development lifecycle to fix broken builds and production bugs autonomously. Rather than writing isolated code snippets, it coordinates specialized AI agents (Critic, Coder, and Sandbox) to clone repositories, parse code structures via Abstract Syntax Trees (AST), patch bugs, verify the fixes in isolated runtimes (Docker/Subprocess), and log results persistently.
+AEGIS CI is a full-stack Next.js platform that operates directly within the software development lifecycle to fix broken builds and production bugs autonomously. Rather than writing isolated code snippets, it coordinates specialized AI agents (Critic, Coder, and Sandbox) to clone repositories, parse code structures via Abstract Syntax Trees (AST), patch bugs, verify the fixes in isolated runtimes (Docker/Subprocess), and log results persistently.
 
 ---
 
 ## 🏗️ End-to-End System Workflow
 
-HYDRA operates as a multi-agent orchestration pipeline:
+AEGIS CI operates as a multi-agent orchestration pipeline:
 
 ```
 [Webhook / UI Trigger] 
@@ -177,5 +177,5 @@ git push -u origin main
 5. Select **Preset: Calculator Bug** or **Preset: Auth Service Bug** and click **Trigger Webhook & Fix** to test!
 
 
-repo at: https://github.com/VinayakGaikwad101/hydra-ci-cd-agent
-deployed url: https://hydra-ci-cd-agent.vercel.app
+repo at: https://github.com/your-username/aegis-ci
+deployed url: https://aegis-ci.vercel.app

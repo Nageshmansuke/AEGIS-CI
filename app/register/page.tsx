@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import Link from 'next/link';
 import { authClient } from '@/lib/auth-client';
-import { Lock, Mail, User, Cpu, RefreshCw, AlertCircle, Eye, EyeOff } from 'lucide-react';
+import { Lock, Mail, User, Shield, RefreshCw, AlertCircle, Eye, EyeOff } from 'lucide-react';
 
 export default function RegisterPage() {
   const [name, setName] = useState('');
@@ -73,12 +73,12 @@ export default function RegisterPage() {
 
       {/* Logo */}
       <div className="flex items-center gap-3 mb-8">
-        <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-magenta-500 flex items-center justify-center glow-cyan">
-          <Cpu className="h-6 w-6 text-white" />
+        <div className="h-10 w-10 rounded-xl bg-gradient-to-tr from-cyan-500 to-indigo-500 flex items-center justify-center glow-cyan shadow-lg shadow-cyan-500/20">
+          <Shield className="h-6 w-6 text-white" />
         </div>
         <div>
-          <h1 className="text-xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-pink-400 bg-clip-text text-transparent">
-            HYDRA AGENT
+          <h1 className="text-xl font-bold tracking-tight bg-gradient-to-r from-cyan-400 to-indigo-300 bg-clip-text text-transparent">
+            AEGIS CI
           </h1>
           <p className="text-xs text-slate-400 font-mono">Self-Healing CI/CD Platform</p>
         </div>
@@ -125,7 +125,7 @@ export default function RegisterPage() {
                 required
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                placeholder="developer@hydra.ai"
+                placeholder="developer@aegis.ai"
                 className="w-full bg-slate-950/80 border border-slate-800 focus:border-cyan-500 rounded-lg py-2 pl-10 pr-3 text-sm text-slate-300 outline-none transition-colors"
               />
             </div>

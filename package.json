@@ -1,5 +1,5 @@
 {
-  "name": "ci_cd_agent",
+  "name": "aegis-ci",
   "version": "0.1.0",
   "private": true,
   "scripts": {
